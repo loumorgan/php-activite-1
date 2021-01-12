@@ -11,9 +11,9 @@
 
   <header>
     <ul>
-      <li><a href="index.htm" class="active">Accueil</a></li>
-      <li><a href="apropos.htm">À propos</a></li>
-      <li><a href="contact.htm">Contact</a></li>
+      <li><a href="index.php" class="active">Accueil</a></li>
+      <li><a href="apropos.php">À propos</a></li>
+      <li><a href="contact.php">Contact</a></li>
     </ul>
   </header>
 
