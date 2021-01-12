@@ -1,18 +1,21 @@
 <?php
 
-print_r($_GET);
+include './views/header.php';
 
-include './header.php';
-
-$filename = $_GET['page'].'.php';
-
-if (file_exists($filename)) {
-    include $filename;
-} else {
-    include "404.php";
+//si le paramètre $_GET['page'] n'existe pas, on affiche la home
+if(!isset($_GET['page'])){ 
+  include "./views/home.php";
+}
+//sinon
+else { 
+  $filename = './views/'.$_GET['page'].'.php';
+  if (file_exists($filename)) { //on teste si le fichier demandé existe
+      include $filename; //si oui on inclut
+  } else {
+      include "./views/404.php";  //sinon on inclut une 404
+  }
 }
 
-
-include './footer.php'; 
+include './views/footer.php'; 
 
 ?>
