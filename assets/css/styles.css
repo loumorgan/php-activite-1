@@ -1,0 +1,26 @@
+body {
+  background-color: #f0e7e7;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 20px 0;
+  padding: 0 0 20px 0;
+  border-bottom: 2px solid gray;
+}
+header ul li {
+  margin-right: 30px;
+}
+
+section {
+  padding: 60px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid gray;
+  padding: 20px 0 0 0;
+}
