@@ -29,3 +29,10 @@ footer {
   color: red;
   border: 1px solid yellow;
 }
+
+table, tr, td {
+  border: 1px solid black;
+}
+td {
+  padding: 10px;
+}

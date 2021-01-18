@@ -1,9 +1,20 @@
 <?php
 
+session_start();
+
+// print_r($_SESSION);
+
+if(isset($_GET['action']) and $_GET['action'] == "logout") {
+  session_destroy();
+  header('Location: ?page=home');
+} 
+
+include './lib/users.php';
+
 include './views/header.php';
 
 //si le paramètre $_GET['page'] n'existe pas, on affiche la home
-if(!isset($_GET['page'])){ 
+if( ! isset($_GET['page'])){ 
   include "./views/home.php";
 }
 //sinon
