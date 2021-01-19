@@ -1,4 +1,6 @@
 <?php
+//Version 1 - sans fonctions
+
 //If we edit the user, we do not want to display these forms
 if (!isset($_SESSION['logged_in']) and (!isset($_GET['action']) or $_GET['action'] != "edit")) { ?>
   <h2 class="w3-wide">S'identifier</h2>
